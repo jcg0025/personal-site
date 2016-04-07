@@ -6,14 +6,19 @@
   font-family: "GlOrY";
   src: url("http://www.myfontfree.com/data/54/g/glory/GLORY-R.TTF");
 }
+@font-face {
+  font-family: "Graffit";
+  src: url("fonts/Graffiti.ttf");
+}
 .navbar-default {
-  background-color: darkslategray;
+  background: darkslategray;
+  background: -webkit-linear-gradient(right, darkslategray, slategray);
   border-color: gray;
   border-radius: 0em;
 }
 .navbar-default .navbar-brand {
   color: white;
-  font-family: GlOrY;
+  font-family: GlOrY, Graffiti;
   font-size: 3.2em;
 }
 .navbar-default .navbar-nav li a {
@@ -22,18 +27,19 @@
 .navbar-default .navbar-nav li a:hover {
   color: lightgray;
 }
-.navbar-default .navbar-toggle {
-  background-color: lightgrey;
-}
-.navbar-default .navbar-toggle span {
+.navbar-default .navbar-header {
   color: white;
+}
+.navbar-default button {
+  border: none;
 }
 .About {
   text-align: center;
-  background-color: lightgray;
+  background: lightgray;
+  background: -webkit-radial-gradient(white, white, darkgray);
   padding-top: 5em;
   margin-top: -1.5em;
-  padding-bottom: 15em;
+  padding-bottom: 16em;
 }
 .About h2 {
   letter-spacing: 1em;
@@ -48,13 +54,14 @@
 }
 .Skills {
   text-align: center;
+  padding-bottom: 2.5em;
 }
 .Skills div {
   display: inline-block;
 }
 .Skills h2 {
   letter-spacing: 0.5em;
-  margin-bottom: 1em;
+  margin-bottom: 0.8em;
   text-align: center;
 }
 .Skills img {
@@ -62,7 +69,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 13em;
-  margin-bottom: 5em;
+  margin-bottom: 2.5em;
 }
 .Skills h3 {
   display: inline-block;
@@ -75,6 +82,13 @@
   margin-left: auto;
   margin-right: auto;
   width: 39em;
+  -webkit-transform: rotateX(5deg);
+  transform: rotateX(89deg);
+  transition: transform 2s;
+}
+.Skills .Img.up {
+  -webkit-transform: rotateX(360deg);
+  transform: rotateX(360deg);
 }
 .Skills .Img #img-4 {
   width: 14em;
@@ -102,7 +116,7 @@
   margin-left: 4em;
 }
 .Education {
-  height: 50em;
+  height: 54em;
   background-color: lightgray;
   text-align: center;
 }
@@ -142,16 +156,19 @@
   text-align: left;
   margin-top: 2em;
   border: 0.1em solid gray;
+  background-color: white;
 }
 .Contact #form textarea {
   display: block;
   text-align: left;
   margin-top: 2em;
   border: 0.1em solid gray;
+  margin-bottom: 0.2em;
 }
 .footer {
   height: 11em;
-  background-color: darkslategray;
+  background: darkslategray;
+  background: -webkit-linear-gradient(left, darkslategray, slategray);
   border-top: 0.5em solid lightgray;
   text-align: center;
 }
@@ -163,4 +180,8 @@
 .footer p {
   color: lightgray;
   margin-top: 2.5em;
+}
+.footer span {
+  font-size: 2em;
+  color: lightgray;
 }
