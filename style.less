@@ -6,10 +6,7 @@
 	font-family:"GlOrY";
 	src:url("http://www.myfontfree.com/data/54/g/glory/GLORY-R.TTF");
 }
-@font-face{
-	font-family:"Graffit";
-	src:url("fonts/Graffiti.ttf");
-}
+
 .navbar-default {
     background: darkslategray;
     background: -webkit-linear-gradient(right, darkslategray, slategray);
@@ -17,12 +14,13 @@
     border-radius: 0em;
    .navbar-brand {
        color: white;
-       font-family: GlOrY, Graffiti;
+       font-family: GlOrY, Graffiti, Arial, Helvetica, sans-serif;
        font-size: 3.2em;
    }
    
    .navbar-nav li a {
        color: white;
+       letter-spacing: 0.1em;
    }
     .navbar-nav li a:hover {
        color: lightgray;
@@ -100,7 +98,7 @@
        margin-right: auto;
        width: 39em;
        -webkit-transform: rotateX(5deg);
-       transform: rotateX(89deg);
+       transform: rotateX(89.5deg);
         transition: transform 2s;
         
         &.up {
@@ -229,10 +227,9 @@
     span {
         font-size: 2em;
         color: lightgray;
-    }
-    
-   
+    }     
 }
+
 
 
 
